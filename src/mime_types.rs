@@ -780,6 +780,7 @@ pub static MIME_TYPES: &[(&str, &[&str])] = &[
     ("ntf", &["application/vnd.nitf"]),
     ("nws", &["message/rfc822"]),
     ("nzb", &["application/x-nzb"]),
+    ("o", &["application/octet-stream"]),
     ("oa2", &["application/vnd.fujitsu.oasys2"]),
     ("oa3", &["application/vnd.fujitsu.oasys3"]),
     ("oas", &["application/vnd.fujitsu.oasys"]),
@@ -1224,7 +1225,14 @@ pub static MIME_TYPES: &[(&str, &[&str])] = &[
     ("tsd", &["application/timestamped-data"]),
     ("tsv", &["text/tab-separated-values"]),
     ("ttc", &["font/collection"]),
-    ("ttf", &["font/ttf", "application/x-font-ttf", "application/font-sfnt"]),
+    (
+        "ttf",
+        &[
+            "font/ttf",
+            "application/x-font-ttf",
+            "application/font-sfnt",
+        ],
+    ),
     ("ttl", &["text/turtle"]),
     ("tts", &["video/vnd.dlna.mpeg-tts"]),
     ("twd", &["application/vnd.simtech-mindmapper"]),
